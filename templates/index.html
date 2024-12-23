@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Shopping List for the Jungle Oasis</h1>
+    <form action="/add-item" method="post">
+        <input name="item" autofocus type="text" placeholder="Food Item" required>
+        <input name="name" placeholder="Name" type="radio" value="Kai-Sing">Kai-Sing
+        <input name="name" placeholder="Name" type="radio" value="Nadia">Nadia
+        <button type="submit">Add to list</button>
+    </form>
+{% endblock %}
